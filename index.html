@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Suggestion Box</title>
+        <script type="text/javascript" src="js/vendor/angular.min.js"></script>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
+            css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body ng-app="SuggestionBox" ng-controller="HomeController">
+        <h1> {{ helloWorld }} </h1>
+        <div class="suggestions" ng-repeat="posts in demoSuggestions">
+            <p> {{ post.title }}</p>
+        </div>
+
+        <!-- Modules -->
+        <script type="text/javascript" src="js/app.js"></script>
+
+        <!-- Controllers -->
+        <script src="js/controllers/HomeController.js"></script>
+
+        <!-- Services -->
+        <script type="text/javascript" src="js/services/suggestions.js"></script>
+    </body>
+
+</html>
